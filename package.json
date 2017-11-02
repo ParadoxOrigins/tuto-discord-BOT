@@ -9,6 +9,7 @@
   "author": "TheShooter",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^11.2.1"
+    "discord.js": "^11.2.1",
+    "performance-now": "^2.1.0"
   }
 }
