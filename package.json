@@ -1,0 +1,14 @@
+{
+  "name": "tuto-bot-discord",
+  "version": "0.0.1",
+  "description": "Bot-tuto réalisé sur YouTube",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TheShooter",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}
