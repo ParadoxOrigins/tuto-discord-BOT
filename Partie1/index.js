@@ -10,19 +10,13 @@ console.log('I m ready');
 });
 var messages = [];
 client.on('message', message => {
-if (message.content.startsWith(prefix + "test")) {
-message.channel.send('5/5');}});
-
-
-client.on('message', message => {
-if (message.content.startsWith(prefix + "ping")) {
-var now = require('performance-now');
-var startTime = now();
-message.channel.send("pong = wait...")
-.then(message => {
-var endTime = now();
-return message.edit("**pong :ping_pong: = " + Math.round(endTime - startTime) + " ms.**");
-}).catch(console.error);
-}});
+     if (message.content.startsWith(prefix + "test")) {
+            message.channel.send('5/5');
+     }
+     else if (message.content.startsWith(prefix + "ping")) {
+       let startTime = Date.now();
+       message.channel.send("pong = wait...").then(msg => msg.edit(`pong: ${Date.now() - startTime}`);
+     }
+});
 
 client.login(token)
